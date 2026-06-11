@@ -3,7 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/preview-server.mjs"
+    "dev": "node scripts/preview-server.mjs",
+    "build": "node scripts/build-static.mjs"
   },
   "dependencies": {
     "handlebars": "^4.7.8"
