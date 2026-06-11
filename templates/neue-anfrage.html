@@ -1,0 +1,1077 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width"/>
+<style>
+@media only screen and (max-width: 569px) {
+div {
+margin-right: 0 !important;
+}
+}
+a {
+color: #4c8ba5;
+text-decoration: none;
+}
+table {
+border-collapse: collapse;
+}
+td {
+border-collapse: collapse;
+}
+</style>
+</head>
+<body style="width: 100% !important; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; background-color:#f2f4f7;">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="font-family: Arial, Helvetica, Tahoma, sans-serif; color:#48453b; text-align:left; padding:0px; margin:0px;">
+
+<tr>
+<td style="background-color:#f2f4f7; padding-top:20px;" valign="top">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600" background-color="#ffffff" style="padding:0px; margin:0px;"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+
+<!-- Preheader -->
+<tr>
+<td align="center" style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;"><center><span style="display:none;font-size:1px;color:#ffffff;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">{{#each recipients}} {{#if salutation}} {{salutation}}, {{else}} Sehr geehrte Damen und Herren, {{/if}} {{else}} Sehr geehrte Damen und Herren, {{/each}} gerne senden wir Ihnen eine neue Anfrage mit allen wichtigen Kontaktdaten und Informationen des Interessenten. Wir wünschen Ihnen einen erfolgreichen Abschluss!</span></center></td>
+</tr>
+
+<!-- Header -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" style="text-align:left; vertical-align:middle; padding:20px 10px 15px 25px;"><a target="_blank" style="text-decoration:none; color:#48453b;" href="https://www.pflegehilfe.org/?utm_source=automation&utm_medium=b2b&utm_campaign=lift_1&utm_term=logo" title="Verbund Pflegehilfe"><img style="max-height:70px; max-width:90%; font-family: Arial, Helvetica, Tahoma, sans-serif; font-size:16px; color:#48453b; text-align:left; font-weight:bold; border:0px;" src="https://static.pflegehilfe.org/newsletter/logo-vp-186-59-1.png" alt="Verbund Pflegehilfe" title="Verbund Pflegehilfe" /></a></td>
+<td align="right" style="text-align:right; vertical-align:middle; padding:20px 25px 15px 10px;"><img style="max-height:65px; max-width:75%; color:#48453b; font-size:14px; border:0px;" src="https://static.pflegehilfe.org/newsletter/tuev-siegel-124-65.png" alt="TÜV-zertifiziert" title="TÜV-zertifiziert" /></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<!-- Trennlinie -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td style="padding:0px 25px 12px 25px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="550"><tr><td align="center" valign="top" width="550"><![endif]-->
+<hr height="1" style="height:1px; border-width:0px; color:#98c44c; background-color:#98c44c; margin:0px;" />
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Einstieg -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 22px; line-height:25px; color: #48453b; text-align:left; padding:5px 25px 10px 25px;">
+<b><span style="color:#98c44c;">››</span> Neue Anfrage: <span style="color:#98c44c;">{{lead.productName}}</span></b>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding:14px 25px 10px 25px;">
+<b>{{#each recipients}} {{#if salutation}} {{salutation}}, {{else}} Sehr geehrte Damen und Herren, {{/if}} {{else}} Sehr geehrte Damen und Herren, {{/each}}</b><br/><br/> 
+aufgrund Ihrer Kapazitätsmeldung erhalten Sie untenstehend die <b>Kontaktdaten</b> mit der Anfragen-Nummer {{lead.requestNumber}}. Wir danken Ihnen für eine zeitnahe Kontaktaufnahme.<br/><br/>
+{{{leadPriceTypeInfo}}}
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+	
+<!-- Kontakt -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="background-color:#ffffff; padding:10px 25px 25px 25px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="550"><tr><td align="center" valign="top" width="550"><![endif]-->
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+<tr>
+<td style="background-color:#f2f4f7;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+<!-- Headline -->
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+<tr>
+<td style="padding:20px 25px 7px 25px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding-right:15px; text-align:left;"><img width="43" src="https://static.pflegehilfe.org/newsletter/icons/icon-visitenkarte-43-35-1.png" alt="Kontakt" title="Kontakt" align="center" border="0" style="color:#000000; font-size:8px;"/></td>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 18px; line-height:23px; color: #4c8ba5; text-align:left; padding-top:3px;"><b>Kontakt&shy;informationen des Interessenten</b></td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!-- Ende Headline -->
+<!-- Liste zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="550"><tr><td align="center" valign="top" width="550"><![endif]-->
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+<tr>
+<td align="left" valign="top" style="font-size:0; padding:5px 25px 0px 25px;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="490"><tr><td align="left" valign="top" width="130"><![endif]-->
+<div style="display:inline-block; max-width:130px; vertical-align:top; width:100%; margin-right:30px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:130px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Name:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="315"><![endif]-->
+<div style="display:inline-block; max-width:315px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:315px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;">{{clientLead.sex}} {{clientLead.academicDegree}} {{clientLead.firstName}} {{clientLead.surName}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+{{#each clientLead.phones}}	
+<tr>
+<td align="left" valign="top" style="font-size:0; padding:5px 25px 0px 25px;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="490"><tr><td align="left" valign="top" width="130"><![endif]-->
+<div style="display:inline-block; max-width:130px; vertical-align:top; width:100%; margin-right:30px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:130px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>{{phoneType}}:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="315"><![endif]-->
+<div style="display:inline-block; max-width:315px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:315px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><a style="color:#4c8ba5; text-decoration:none;" href="tel:{{number}}" title="Telefon" target="_blank">{{number}}</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+{{/each}}
+{{#if clientLead.email}}
+<tr>
+<td align="left" valign="top" style="font-size:0; padding:5px 25px 0px 25px;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="490"><tr><td align="left" valign="top" width="130"><![endif]-->
+<div style="display:inline-block; max-width:130px; vertical-align:top; width:100%; margin-right:30px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:130px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>E-Mail-Adresse:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="315"><![endif]-->
+<div style="display:inline-block; max-width:315px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:315px;">
+<tr>
+<td style="padding:0px; text-align:left; line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;"><a style="color:#4c8ba5; text-decoration:none;" href="mailto:{{clientLead.email}}" title="E-Mail-Adresse" target="_blank">{{clientLead.email}}</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+{{/if}}
+{{#if clientLead.availability}}
+<tr>
+<td align="left" valign="top" style="font-size:0; padding:5px 25px 0px 25px;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="490"><tr><td align="left" valign="top" width="130"><![endif]-->
+<div style="display:inline-block; max-width:130px; vertical-align:top; width:100%; margin-right:30px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:130px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Erreichbarkeit:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="315"><![endif]-->
+<div style="display:inline-block; max-width:315px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:315px;">
+<tr>
+<td style="padding:0px; text-align:left; line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">{{{clientLead.availability}}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+{{/if}}
+{{#if clientLead.hasAddress}}
+<tr>
+<td align="left" valign="top" style="font-size:0; padding:5px 25px 0px 25px;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="490"><tr><td align="left" valign="top" width="130"><![endif]-->
+<div style="display:inline-block; max-width:130px; vertical-align:top; width:100%; margin-right:30px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:130px;">
+<tr>
+<td style="padding:0px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Anschrift:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="315"><![endif]-->
+<div style="display:inline-block; max-width:315px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:315px;">
+<tr>
+<td style="padding:0px; text-align:left; line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">{{#if clientLead.addressLine1}}{{clientLead.addressLine1}}<br /> {{/if}} 
+{{#if clientLead.addressLine2}} {{clientLead.addressLine2}}<br /> {{/if}}
+{{clientLead.countryIso2}}-{{clientLead.zipCode}} {{clientLead.city}}
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+{{/if}}
+</table>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+{{#if clientLead.hasAddress}}{{#unless isSameAddressInRequest}}
+<!-- Text -->
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+<tr>
+<td style="padding:10px 25px 0px 25px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; "><b><u>Achtung</u></b>: Bitte beachten Sie, dass der <b>Bedarfsort der Anfrage</b> von der Anschrift des Interessenten abweicht. Der Bedarfsort liegt in Ihrem Zielgebiet und ist in den Anfragedetails aufgeführt.</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!-- Ende Text -->
+{{/unless}}
+{{/if}}
+<!-- Abstand -->
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:550px;">
+<tr>
+<td style="padding-top:20px;">
+
+
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="font-size: 1px; line-height:1px;">&nbsp;</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!-- Ende Abstand -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Informationen Senioren -->
+{{#if isSeniorSet}}
+{{#if hasMultipleSeniors}}
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="text-align:left; color:#98c44c; font-size: 20px; line-height: 25px; font-family: Arial, Helvetica, Tahoma, sans-serif; padding:0px 25px 15px 25px; background-color:#ffffff;"><b>Informationen zu den Senioren</b></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{else}}	
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="text-align:left; color:#98c44c; font-size: 20px; line-height: 25px; font-family: Arial, Helvetica, Tahoma, sans-serif; padding:0px 25px 15px 25px; background-color:#ffffff;"><b>Informationen zum Senior</b></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{/if}}
+	
+{{#each seniors}}
+{{#if relationship}} 
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:0px 25px 5px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<!-- zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" valign="top" style="font-size:0;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="left" valign="top" width="140"><![endif]-->
+<div style="display:inline-block; max-width:140px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" align="left">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Beziehung:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="390"><![endif]-->
+<div style="display:inline-block; max-width:390px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:390px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;">{{{relationship}}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{/if}}
+{{#if careLevel}}
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:0px 25px 5px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<!-- zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" valign="top" style="font-size:0;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="left" valign="top" width="140"><![endif]-->
+<div style="display:inline-block; max-width:140px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" align="left">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Pflegegrad:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="390"><![endif]-->
+<div style="display:inline-block; max-width:390px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:390px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;">{{{careLevel}}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{/if}}
+
+<!-- Trennlinie -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td style="padding:15px 50px 20px 50px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="500"><tr><td align="center" valign="top" width="500"><![endif]-->
+<hr height="1" style="height:1px; border-width:0px; color:#c8c7c4; background-color:#c8c7c4; margin:0px;" />
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{/each}}
+{{/if}}
+	
+<!-- Trenner -->
+<tr>
+<td style="background-color:#f2f4f7;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding:3px 0px 3px 0px;">&nbsp;</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Anfragedetails -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="text-align:left; color:#98c44c; font-size: 20px; line-height: 25px; font-family: Arial, Helvetica, Tahoma, sans-serif; padding:20px 25px 10px 25px;"><b>Anfragedetails: {{lead.productName}}</b></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>	
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:0px 25px 5px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<!-- zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" valign="top" style="font-size:0;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="left" valign="top" width="140"><![endif]-->
+<div style="display:inline-block; max-width:140px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" align="left">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Anfragen-Nr.:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="390"><![endif]-->
+<div style="display:inline-block; max-width:390px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:390px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;">{{lead.requestNumber}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:0px 25px 5px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<!-- zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" valign="top" style="font-size:0;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="left" valign="top" width="140"><![endif]-->
+<div style="display:inline-block; max-width:140px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" align="left">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Bedarfsort:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="390"><![endif]-->
+<div style="display:inline-block; max-width:390px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:390px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;">{{lead.zipCode}} {{lead.region}}-{{lead.countryIso2}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{#if lead.requestDetail}}
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:0px 25px 5px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<!-- zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" valign="top" style="font-size:0;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="540"><tr><td align="left" valign="top" width="140"><![endif]-->
+<div style="display:inline-block; max-width:140px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:140px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0" align="left">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;"><b>Weitere Details:</b></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="390"><![endif]-->
+<div style="display:inline-block; max-width:390px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:390px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left;">{{{lead.requestDetail}}}</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+{{/if}}	
+	
+<!-- Datenschutz -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:15px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td width="10" style="font-size:1px;">&nbsp;</td>
+<td style="width:1px;padding:2px;font-size:1px;" bgcolor="#98c44c" width="3">&nbsp;</td>
+<td width="10">&nbsp;</td>
+<td style="padding:10px 15px 0px 15px; text-align:left;"><img width="19" src="https://static.pflegehilfe.org/newsletter/icons/icon-info-gruen-19-35-1.png" alt="Datenschutz" title="Datenschutz" align="center" border="0" style="color:#000000; font-size:8px;"/></td>
+<td style="padding:15px 10px 0px 0px; text-align:left;color:#4c8ba5; font-size: 18px; line-height:23px; font-family: Arial, Helvetica, Tahoma, sans-serif;"><b>Datenschutz</b></td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td width="10" style="font-size:1px;">&nbsp;</td>
+<td style="width:1px;padding:2px;font-size:1px;" bgcolor="#98c44c" width="3">&nbsp;</td>
+<td width="10">&nbsp;</td>
+<td style="padding: 10px 10px 10px 10px; line-height:19px; color: #48453b; font-size: 14px; font-family: Arial, Helvetica, Tahoma, sans-serif;">Zustimmung zur Datenschutz&shy;erklärung: <nobr>{{lead.createdDateTime}}</nobr></td>
+</tr>
+<tr>
+<td width="10" style="font-size:1px;">&nbsp;</td>
+<td style="width:1px;padding:2px;font-size:1px;" bgcolor="#98c44c" width="3">&nbsp;</td>
+<td width="10">&nbsp;</td>
+<td style="padding: 0px 10px 10px 10px; line-height:19px; color: #48453b; font-size: 14px; font-family: Arial, Helvetica, Tahoma, sans-serif;">Zustimmung zur Kontaktweitergabe: <nobr>{{lead.privacyCheckedDate}}</nobr></td>
+</tr>
+<tr>
+<td width="10" style="font-size:1px;">&nbsp;</td>
+<td style="width:1px;padding:2px;font-size:1px;" bgcolor="#98c44c" width="3">&nbsp;</td>
+<td width="10">&nbsp;</td>
+<td style="padding: 0px 10px 15px 10px; line-height:19px; color: #48453b; font-size: 14px; font-family: Arial, Helvetica, Tahoma, sans-serif;"> 
+{{#if lead.requestOrigin}}{{#equals lead.requestOrigin "SelfService"}}Die Anfragedetails wurden {{#if lead.finishedDateTime}} am <nobr>{{lead.finishedDateTime}} Uhr</nobr> {{/if}} vom Interessenten selbst ausgefüllt.{{else}}Das Beratungsgespräch wurde {{#if lead.finishedDateTime}} am <nobr>{{lead.finishedDateTime}} Uhr</nobr> {{/if}} {{#if lead.employeeOwnerName}} von <nobr>{{lead.employeeOwnerName}}</nobr> {{/if}} geführt.
+{{/equals}}{{else}}Das Beratungsgespräch wurde {{#if lead.finishedDateTime}} am <nobr>{{lead.finishedDateTime}} Uhr</nobr> {{/if}} {{#if lead.employeeOwnerName}} von <nobr>{{lead.employeeOwnerName}}</nobr> {{/if}} geführt.{{/if}}</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+	
+<!-- Next Steps -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; ">
+<tr>
+<td style="padding:15px 25px 25px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; border-width:2px; border-style:solid; border-color:#4c8ba5;">
+<tr>
+<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px; ">
+<!-- Headline -->
+<tr>
+<td><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="padding:18px 20px 0px 20px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding-right:10px; text-align:left;"><img width="39" src="https://static.pflegehilfe.org/newsletter/icons/icon-pfeil-39-27-1.png" alt="&#8658;" title="⇒" align="center" border="0" style="color:#48453b; font-size:18px; font-weight:bold; border:0px;"/></td>
+<td style="padding-top:4px;text-align:left; color:#4c8ba5; font-size:18px; line-height:23px; font-family: Arial, Helvetica, Tahoma, sans-serif;"><b>Anfragen-Manager</b>: Anfragen digital verwalten</td>
+</tr>
+</tbody>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!-- Ende Headline -->
+<!-- Text -->
+<tr>
+<td style="background-color:#ffffff;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td><table align="left" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="padding:10px 20px 15px 20px; text-align:left; color:#48453b; font-family: Arial, Helvetica, Tahoma, sans-serif; font-size:14px; line-height:19px;">Steigen Sie mit dem Anfragen-Manager in die digitale Kundengewinnung ein. <b>Einfach, effizient</b> und <b>zukunftsorientiert</b>. Das sind Ihre Vorteile: 
+</td>
+</tr>
+<tr> 
+<td style="padding:0px 20px 20px 20px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding:4px 10px 3px 0px; text-align:left; vertical-align:top;" width="22"><img width="22" src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt="-" title="-" align="center" border="0" style="color:#000000; font-size:8px;"/></td>
+<td style="padding:5px 0px 0px 0px; line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">Anfragen zentral verwalten</td>
+</tr>
+<tr>
+<td style="padding:4px 10px 3px 0px; text-align:left; vertical-align:top;" width="22"><img width="22" src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt="-" title="-" align="center" border="0" style="color:#000000; font-size:8px;"/></td>
+<td style="padding:5px 0px 0px 0px; line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">Buchungspotenziale optimieren</td>
+</tr>
+<tr>
+<td style="padding:4px 10px 3px 0px; text-align:left; vertical-align:top;" width="22"><img width="22" src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt="-" title="-" align="center" border="0" style="color:#000000; font-size:8px;"/></td>
+<td style="padding:5px 0px 0px 0px; line-height:19px; color: #48453b; font-size: 14px; font-weight: normal; font-family: Arial, Helvetica, Tahoma, sans-serif;">Kapazitäten mit passenden Anfragen auslasten</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td style="padding:0px 20px 20px 20px; line-height:19px; color: #48453b; font-size: 14px; font-family: Arial, Helvetica, Tahoma, sans-serif;">
+<a href="{{leadOverviewUrl}}" title="Anfragen-Manager" target="_blank" style="color:#4c8ba5; text-decoration:none;"><nobr><span style="color:#4c8ba5;"><u>Zum Anfragen-Manager&nbsp;»</u></span></nobr></a>
+</td></tr>
+</tbody>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<!-- Ende Text -->
+</table></td>
+</tr>
+</table></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+		
+<!-- Trenner -->
+<tr>
+<td style="background-color:#f2f4f7;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding:3px 0px 3px 0px;">&nbsp;</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+	
+<!-- Reklamation -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="text-align:left; color:#98c44c; font-size: 20px; line-height: 25px; font-family: Arial, Helvetica, Tahoma, sans-serif; padding:20px 25px 10px 25px;"><b>Entspricht die Anfrage nicht Ihren Erwartungen?</b></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding:0px 25px 10px 25px;"><a target="_blank" style="text-decoration:none; color: #48453b;" href="{{feedbackUrl}}" title="Entspricht die Anfrage nicht Ihren Erwartungen?">Geben Sie uns kurz Feedback zur Leadqualität. Sollte die Anfrage nicht den vereinbarten Qualitätsstandards entsprechen, können Sie diese <b>innerhalb von 7 Tagen</b> reklamieren. <nobr><span style="color:#4c8ba5;"><u>Feedback geben &amp; Anfrage reklamieren »</u></span></nobr></a>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Verabschiedung -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding:15px 25px 15px 25px;">
+Bei Rückfragen stehen wir Ihnen gerne telefonisch oder per E-Mail zur Verfügung. <br/><br/>
+Wir wünschen Ihnen viel Erfolg!<br/>
+<b>Ihr Verbund Pflegehilfe</b>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Trennlinie -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td style="padding:10px 25px 16px 25px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="550"><tr><td align="center" valign="top" width="550"><![endif]-->
+<hr height="1" style="height:1px; border-width:0px; color:#98c44c; background-color:#98c44c; margin:0px;" />
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Signatur -->
+<tr>
+<td>
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="background-color:#ffffff; padding:0px 25px 30px 25px;">
+<table align="center" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<!-- zweispaltig -->
+<tr>
+<td align="center" height="100%" valign="top" width="100%">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td align="left" valign="top" style="font-size:0;">
+<!--[if mso]><table align="left" border="0" cellspacing="0" cellpadding="0" width="550"><tr><td align="left" valign="top" width="170"><![endif]-->
+<div style="display:inline-block; max-width:170px; vertical-align:top; width:100%; margin-right:30px;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:170px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="text-align:left; padding-top:15px;"><a target="_blank" style="text-decoration:none; color:#48453b;" href="https://www.pflegehilfe.org/?utm_source=automation&utm_medium=b2b&utm_campaign=lift_1&utm_term=footer" title="Verbund Pflegehilfe"><img style="color:#48453b; font-size:14px; font-weight:bold; border:0px;" src="https://static.pflegehilfe.org/newsletter/logo-vp-145-46-1.png" alt="Verbund Pflegehilfe" title="Verbund Pflegehilfe" width="145" border="0" /></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td><td align="left" valign="top" width="330"><![endif]-->
+<div style="display:inline-block; max-width:330px; vertical-align:top; width:100%;">
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:330px;">
+<tr>
+<td>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding: 15px 10px 0px 0px; text-align:left;" valign="top"><img width="27" src="https://static.pflegehilfe.org/newsletter/icons/icon-telefon-kontur-27-27-2.png" alt="Telefon" title="Telefon" align="center" border="0" style="color:#000000; font-size:8px; border:0px;"/></td>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding-top:15px;"><nobr><a style="color:#48453b; text-decoration:none;" href="tel:004961312652011" title="Telefon" target="_blank"><b>06131/26 52 011</b></a></nobr></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding: 10px 12px 0px 0px; text-align:left;" valign="top"><img width="25" src="https://static.pflegehilfe.org/newsletter/icons/icon-fax-25-26-1.png" alt="Fax" title="Fax" align="center" border="0" style="color:#000000; font-size:8px; border:0px;"></td>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding-top:10px;"><nobr><a style="color:#48453b; text-decoration:none;" href="tel:004961318382168" title="Fax" target="_blank"><b>06131/83 82 168</b></a></nobr></td>
+</tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding: 10px 10px 0px 0px; text-align:left;"><img width="27" src="https://static.pflegehilfe.org/newsletter/icons/icon-brief-kontur-27-26-1.png" alt="E-Mail" title="E-Mail" align="center" border="0" style="color:#000000; font-size:8px; border:0px;"/></td>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:left; padding-top:13px;"><a style="color:#48453b; text-decoration:none;" href="mailto:partnerbetreuung@pflegehilfe.de" title="E-Mail-Adresse" target="_blank"><b>partnerbetreuung@pflegehilfe.de</b></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--[if mso]></td></tr></table><![endif]--></td>
+</tr>
+</table>
+</td>
+</tr>
+<!-- Ende Liste zweispaltig -->
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+	
+<!-- Trustpilot -->
+<tr>
+<td style="background-color:#f2f4f7; padding-top:30px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:center; background-color:#ffffff; padding:25px 0px 0px 0px;">
+<p style="text-align:center;margin:0;padding:5px;"><span style="display:inline-block"><a href="https://de.trustpilot.com/review/pflegehilfe.org?utm_medium=Trustbox&utm_source=EmailNewsletter1" style="text-decoration:none" title="Trustpilot" target="_blank"><img alt="Human score" border="0" height="30" src="https://emailsignature.trustpilot.com/newsletter/de-DE/1/5033beaa000064000519d510/text1@2x.png" style="max-height:30px; border:0px;"></a></span>&nbsp;&nbsp;<span style="display:inline-block"><a href="https://de.trustpilot.com/review/pflegehilfe.org?utm_medium=Trustbox&utm_source=EmailNewsletter1" style="text-decoration:none" title="Trustpilot" target="_blank"><img alt="Trustpilot Stars" border="0" height="30" src="https://emailsignature.trustpilot.com/newsletter/de-DE/1/5033beaa000064000519d510/stars@2x.png" style="max-height:30px; border:0px;"></a></span></p>
+<p style="text-align:center;margin:0;padding:5px;"><span style="display:inline-block"><a href="https://de.trustpilot.com/review/pflegehilfe.org?utm_medium=Trustbox&utm_source=EmailNewsletter1" style="text-decoration:none" title="Trustpilot" target="_blank"><img alt="number of reviews" border="0" height="18" src="https://emailsignature.trustpilot.com/newsletter/de-DE/1/5033beaa000064000519d510/text2@2x.png" style="max-height:18px; border:0px;"></a></span>&nbsp;&nbsp;<span style="display:inline-block"><a href="https://de.trustpilot.com/review/pflegehilfe.org?utm_medium=Trustbox&utm_source=EmailNewsletter1" style="text-decoration:none" title="Trustpilot" target="_blank"><img alt="Trustpilot Logo" border="0" height="20" src="https://emailsignature.trustpilot.com/brand/n/1/logo.png" style="max-height:20px;display:inline-block; border:0px;"></a></span></p>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Impressum -->
+<tr>
+<td>
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 14px; line-height:19px; color: #48453b; text-align:center; background-color:#ffffff; padding:15px 25px 10px 25px;">
+<a href="https://www.pflegehilfe.org/datenschutz?utm_source=automation&utm_medium=b2b&utm_campaign=lift_1&utm_term=datenschutz" title="Datenschutz" target="_blank" style="color:#4c8ba5; text-decoration:none;">Datenschutz</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.pflegehilfe.org/agb?utm_source=automation&utm_medium=b2b&utm_campaign=lift_1&utm_term=agb#gewerblich" title="AGB" target="_blank" style="color:#4c8ba5; text-decoration:none;">AGB</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="https://www.pflegehilfe.org/impressum?utm_source=automation&utm_medium=b2b&utm_campaign=lift_1&utm_term=impressum" title="Impressum" target="_blank" style="color:#4c8ba5; text-decoration:none;">Impressum</a>
+</td>
+</tr>
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 12px; line-height:17px; color: #48453b; text-align:left; background-color:#ffffff; padding:10px 25px 15px 25px;">
+VP Verbund Pflegehilfe GmbH | Inge-Reitz-Straße 5-7 | 55120 Mainz | Deutschland<br/>
+Geschäftsführer: Johannes Haas, Michael Haas, Maximilian Haas<br/>
+Sitz der Gesellschaft: Mainz, Rheinland Pfalz<br/>
+Registergericht: Amtsgericht Frankfurt am Main | Registernummer: HRB 109505<br/>
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE315652480
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Trennlinie -->
+<tr>
+<td style="background-color:#ffffff;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td>
+<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td style="padding:10px 25px 15px 25px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="550"><tr><td align="center" valign="top" width="550"><![endif]-->
+<hr height="1" style="height:1px; border-width:0px; color:#48453b; background-color:#48453b; margin:0px;" />
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+<!-- Disclaimer -->
+<tr>
+<td style="background-color:#f2f4f7; padding-bottom:50px;">
+<!--[if mso]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600"><tr><td align="center" valign="top" width="600"><![endif]-->	
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;">
+<tr>
+<td style="font-family: Arial, Helvetica, Tahoma, sans-serif; font-size: 12px; line-height:17px; color: #48453b; text-align:left; background-color:#ffffff; padding:10px 25px 25px 25px;">
+Diese E-Mail könnte vertrauliche und/oder rechtlich geschützte Informationen enthalten. Wenn Sie nicht der richtige Adressat sind oder diese E-Mail irrtümlich erhalten haben, informieren Sie bitte sofort den Absender und vernichten Sie diese E-Mail. Das unerlaubte Kopieren sowie die unbefugte Weitergabe dieser E-Mail sind nicht gestattet.
+</td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+
+</table>
+</center>
+</body>
+</html>

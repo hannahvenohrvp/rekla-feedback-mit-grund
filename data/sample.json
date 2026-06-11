@@ -1,0 +1,93 @@
+{
+  "recipients": [
+    { "salutation": "Sehr geehrter Herr Mustermann" }
+  ],
+  "lead": {
+    "productName": "24-Stunden-Pflege",
+    "requestNumber": "12795289",
+    "zipCode": "55116",
+    "region": "Mainz",
+    "countryIso2": "DE",
+    "requestDetail": "Der Interessent sucht eine Betreuung ab dem 01.07.2026. Pflegegrad 3 liegt vor.",
+    "createdDateTime": "11.06.2026, 09:15",
+    "privacyCheckedDate": "11.06.2026, 09:16",
+    "finishedDateTime": "11.06.2026, 09:20",
+    "employeeOwnerName": "Maria Beraterin",
+    "requestOrigin": "Beratung"
+  },
+  "leadPriceTypeInfo": "Diese Anfrage wird Ihnen im Rahmen Ihrer gebuchten Kapazität bereitgestellt.",
+  "clientLead": {
+    "sex": "Herr",
+    "academicDegree": "Dr.",
+    "firstName": "Max",
+    "surName": "Mustermann",
+    "email": "max.mustermann@beispiel.de",
+    "availability": "Montag–Freitag, 10:00–18:00 Uhr",
+    "hasAddress": true,
+    "addressLine1": "Musterstraße 12",
+    "addressLine2": "",
+    "zipCode": "60311",
+    "city": "Frankfurt am Main",
+    "countryIso2": "DE",
+    "phones": [
+      { "phoneType": "Telefon", "number": "+49 69 12345678" },
+      { "phoneType": "Mobil", "number": "+49 170 9876543" }
+    ]
+  },
+  "isSameAddressInRequest": false,
+  "isSeniorSet": true,
+  "hasMultipleSeniors": false,
+  "seniors": [
+    {
+      "relationship": "Ehepartner/in",
+      "careLevel": "Pflegegrad 3"
+    }
+  ],
+  "leadOverviewUrl": "https://partner.pflegehilfe.org/anfragen",
+  "cancellationUrl": "/lp/reklamation",
+  "feedbackUrl": "/lp/feedback?from=email",
+  "advisorName": "Maxi Muster",
+  "inquiryDetails": {
+    "contact": {
+      "salutation": "Frau",
+      "firstName": "Angelina",
+      "lastName": "Egermann",
+      "email": "angelina-egermann@gmx.net",
+      "mobile": "+49 15732555704",
+      "availability": "Ganztägig telefonisch gut erreichbar"
+    },
+    "seniors": [
+      {
+        "title": "Lebenspartner",
+        "salutation": "Herr",
+        "relationship": "Lebenspartner",
+        "livingSituation": "Zweifamilienhaus (ZFH)",
+        "careLevel": "Pflegegrad 3",
+        "mobility": "Mobil mit Gehstock",
+        "medicalBackground": "Herzinfarkt"
+      },
+      {
+        "title": "Klient selbst",
+        "salutation": "Frau",
+        "relationship": "Klient selbst",
+        "livingSituation": "Zweifamilienhaus (ZFH)",
+        "careLevel": "Pflegegrad 4",
+        "mobility": "Mobil mit Gehstock",
+        "medicalBackground": "Schlaganfall, Lähmungen"
+      }
+    ],
+    "request": {
+      "productName": "Hausnotruf",
+      "fields": [
+        { "label": "Art des Notrufsystems", "value": "Nur zu Hause" },
+        { "label": "Kontaktperson", "value": "Nur Notrufzentrale" },
+        { "label": "Wohnsituation", "value": "Lebt nicht alleine" },
+        { "label": "Pflegegrad/-stufe", "value": "Vorhanden" },
+        { "label": "Bedarf", "value": "Schnellstmöglich" }
+      ],
+      "consultant": "Alexander Wiebrecht",
+      "receivedAt": "11. Juni 10:41",
+      "consultedAt": "11. Juni 10:48"
+    }
+  }
+}
