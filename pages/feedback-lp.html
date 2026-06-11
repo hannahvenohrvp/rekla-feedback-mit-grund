@@ -100,7 +100,7 @@
     }
     .feedback-box-inner {
       background-color: #f2f4f7;
-      border-left: 4px solid #98c44c;
+      border-left: 6px solid #98c44c;
       padding: 22px 24px 20px;
     }
     .feedback-box h2 {
@@ -124,17 +124,27 @@
       color: #48453b;
     }
     .feedback-box ul {
+      list-style: none;
       margin: 0;
-      padding-left: 20px;
+      padding: 0;
       font-size: 14px;
       line-height: 1.55;
       color: #48453b;
     }
     .feedback-box li {
-      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 10px;
     }
     .feedback-box li:last-child {
       margin-bottom: 0;
+    }
+    .feedback-box li img {
+      width: 22px;
+      height: 19px;
+      margin-top: 2px;
+      flex-shrink: 0;
     }
     .hero {
       display: none;
@@ -215,7 +225,7 @@
     }
     .warning-box {
       background-color: #f2f4f7;
-      border-left: 4px solid #c0392b;
+      border-left: 6px solid #c0392b;
       padding: 22px 24px 20px;
       margin-bottom: 16px;
     }
@@ -454,13 +464,25 @@
   <section class="feedback-box">
     <div class="feedback-box-inner">
       <h2>Vielen Dank für Ihre Rückmeldung!</h2>
-      <p>Ihr Feedback hilft uns dabei, die <b>Qualität unserer Beratung</b> kontinuierlich zu verbessern und <b>passende Anfragen für unsere Partner</b> sicherzustellen.</p>
+      <p>Ihr Feedback hilft uns dabei, die <b>Qualität unserer Beratung</b> kontinuierlich zu verbessern und <b>passende Anfragen für Sie</b> sicherzustellen.</p>
       <h3>Was passiert mit Ihrem Feedback?</h3>
       <ul>
-        <li>Der Berater <b>{{advisorName}}</b> erhält eine <b>persönliche Rückmeldung</b>.</li>
-        <li>Es erfolgt eine <b>gezielte Schulungsmaßnahme</b> bei {{advisorName}}.</li>
-        <li>Das Feedback beeinflusst die <b>Qualitätsbewertung</b> und damit die <b>Bonusvergütung</b> des Beraters.</li>
-        <li>Die Erkenntnisse helfen uns, die <b>Qualität zukünftiger Anfragen</b> weiter zu verbessern.</li>
+        <li>
+          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
+          Der Berater <b>{{advisorName}}</b> erhält eine <b>persönliche Rückmeldung</b>.
+        </li>
+        <li>
+          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
+          Es erfolgt eine <b>gezielte Schulungsmaßnahme</b> bei {{advisorName}}.
+        </li>
+        <li>
+          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
+          Das Feedback beeinflusst die <b>Qualitätsbewertung</b> und damit die <b>Bonusvergütung</b> des Beraters.
+        </li>
+        <li>
+          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
+          Die Erkenntnisse helfen uns, die <b>Qualität zukünftiger Anfragen</b> weiter zu verbessern.
+        </li>
       </ul>
     </div>
   </section>
@@ -475,8 +497,8 @@
       <div class="content-left">
         <div class="warning-box">
           <h2>Lead-Zuteilung gefährdet</h2>
-          <p>Wir verstehen, dass nicht jeder Kontakt perfekt zu Ihrem Angebot passt und Reklamationen Teil eines transparenten Vermittlungsprozesses sind.</p>
-          <p>Gleichzeitig möchten wir darauf hinweisen, dass eine überdurchschnittlich hohe Reklamationsquote Einfluss auf Ihre zukünftige Lead-Zuteilung hat.</p>
+          <p>Wir verstehen, dass <b>nicht jeder Kontakt perfekt zu Ihrem Angebot passt</b> und Reklamationen Teil eines <b>transparenten Vermittlungsprozesses</b> sind.</p>
+          <p>Gleichzeitig möchten wir darauf hinweisen, dass eine <b>überdurchschnittlich hohe Reklamationsquote</b> Einfluss auf Ihre <b>zukünftige Lead-Zuteilung</b> hat.</p>
         </div>
         <p class="phone">
           Sie wollen Ihre Buchung optimieren & zukünftige Reklamationen vermeiden? Ihr persönlicher Partnerbetreuer hilft Ihnen gerne weiter:<br/>
