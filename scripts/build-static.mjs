@@ -30,10 +30,13 @@ const lpContext = {
   advisorName: data.advisorName,
 };
 
+const altEmail = render(join(root, "templates", "neue-anfrage-alt.html"), data);
+const neuEmail = render(join(root, "templates", "neue-anfrage.html"), data);
+
 write("lp/feedback.html", render(join(root, "pages", "feedback-lp.html"), lpContext));
 write("lp/reklamation.html", render(join(root, "pages", "reklamation-lp.html"), lpContext));
-write("email/neu.html", render(join(root, "templates", "neue-anfrage.html"), data));
-write("email/alt.html", render(join(root, "templates", "neue-anfrage-alt.html"), data));
+write("email/alt.html", altEmail);
+write("email/neu.html", neuEmail);
 
 write(
   "index.html",
@@ -42,52 +45,69 @@ write(
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Rekla-Quote & Lead-Qualität</title>
+  <title>E-Mail Vorschau: Alt vs. Neu</title>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f2f4f7;
-      color: #48453b;
+      background: #2b2f36;
+      color: #fff;
     }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 48px 24px;
+    header {
+      padding: 12px 16px;
+      background: #1e2228;
+      border-bottom: 1px solid #3d4450;
+      font-size: 14px;
     }
-    h1 { color: #98c44c; font-size: 28px; margin: 0 0 12px; }
-    p { line-height: 1.6; margin: 0 0 24px; }
-    .links { display: grid; gap: 12px; }
-    a {
-      display: block;
-      padding: 16px 20px;
-      background: #fff;
-      border: 1px solid #d1d9e0;
-      border-radius: 6px;
-      color: #4c8ba5;
-      text-decoration: none;
+    .compare {
+      display: flex;
+      gap: 12px;
+      padding: 12px;
+      height: calc(100vh - 49px);
+    }
+    .panel {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .label {
+      text-align: center;
       font-weight: bold;
-    }
-    a:hover { border-color: #4c8ba5; }
-    .hint {
-      margin-top: 32px;
       font-size: 13px;
-      color: #6b6b6b;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 8px;
+      border-radius: 6px 6px 0 0;
+    }
+    .label-alt { background: #6b7280; }
+    .label-neu { background: #98c44c; color: #2b2f36; }
+    iframe {
+      flex: 1;
+      width: 100%;
+      border: none;
+      background: #f2f4f7;
+      border-radius: 0 0 6px 6px;
+    }
+    @media (max-width: 900px) {
+      .compare { flex-direction: column; height: auto; }
+      iframe { min-height: 70vh; }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Rekla-Quote & Lead-Qualität</h1>
-    <p>Demo und Vorschau der E-Mail- und Landingpage-Änderungen.</p>
-    <div class="links">
-      <a href="lp/feedback.html?from=email">Neue Version – Feedback-Seite</a>
-      <a href="lp/reklamation.html">Alte Version – Reklamations-Seite</a>
-      <a href="email/neu.html">E-Mail – Neu</a>
-      <a href="email/alt.html">E-Mail – Alt</a>
+  <header>E-Mail-Vorschau: Reklamations-Abschnitt im Vergleich</header>
+  <div class="compare">
+    <div class="panel">
+      <div class="label label-alt">Alt</div>
+      <iframe src="/email/alt.html" title="Alte E-Mail"></iframe>
     </div>
-    <p class="hint">Lokale Entwicklung mit Live-Vorschau: <code>npm run dev</code></p>
-  </main>
+    <div class="panel">
+      <div class="label label-neu">Neu</div>
+      <iframe src="/email/neu.html" title="Neue E-Mail"></iframe>
+    </div>
+  </div>
 </body>
 </html>`
 );

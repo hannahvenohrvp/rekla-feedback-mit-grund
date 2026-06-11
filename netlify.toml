@@ -1,3 +1,24 @@
 [build]
   command = "npm run build"
   publish = "public"
+
+# Gleiche URLs wie im lokalen Dev-Server
+[[redirects]]
+  from = "/alt"
+  to = "/email/alt.html"
+  status = 200
+
+[[redirects]]
+  from = "/neu"
+  to = "/email/neu.html"
+  status = 200
+
+[[redirects]]
+  from = "/lp/feedback"
+  to = "/lp/feedback.html"
+  status = 200
+
+[[redirects]]
+  from = "/lp/reklamation"
+  to = "/lp/reklamation.html"
+  status = 200
