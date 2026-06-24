@@ -499,10 +499,9 @@
       transform: translate(-50%, -50%);
       z-index: 1101;
       width: 90%;
-      max-width: 460px;
-      padding: 32px 36px;
+      max-width: 720px;
+      padding: 32px 48px;
       background: #fff;
-      border-top: 6px solid #c0392b;
       border-radius: 8px;
       text-align: center;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
@@ -707,12 +706,11 @@
   <div id="rekla-popup">
     <div class="rekla-popup-overlay"></div>
     <div class="rekla-popup" role="dialog" aria-labelledby="rekla-popup-title">
-      <h2 id="rekla-popup-title">Reklamation nicht möglich</h2>
-      <p>Ihre Reklamation kann leider nicht mehr angenommen werden, da die Frist von 7 Tagen bereits abgelaufen ist.</p>
-      <button id="rekla-popup-close" class="rekla-popup-close" type="button">Verstanden</button>
+      <h2 id="rekla-popup-title">Feedback &amp; Reklamation nicht mehr möglich</h2>
+      <p>Ihr Feedback und Ihre Reklamation können leider nicht mehr angenommen werden, da die Frist von 7 Tagen bereits abgelaufen ist.</p>
     </div>
   </div>
-  <section class="feedback-box rekla-above-overlay">
+  <section class="feedback-box">
     <div class="feedback-box-inner">
       <h2>Vielen Dank für Ihre Rückmeldung!</h2>
       <p>Ihr Feedback hilft uns dabei, die <b>Qualität unserer Beratung</b> kontinuierlich zu verbessern und <b>passende Anfragen für Sie</b> sicherzustellen.</p>
@@ -870,14 +868,7 @@
       var v1 = document.getElementById("variant1");
       var v2 = document.getElementById("variant2");
       var popup = document.getElementById("rekla-popup");
-      var popupClose = document.getElementById("rekla-popup-close");
       if (!toggle || !v1 || !v2) return;
-
-      if (popupClose && popup) {
-        popupClose.addEventListener("click", function () {
-          popup.classList.add("variant-hidden");
-        });
-      }
 
       toggle.addEventListener("click", function () {
         var showV2 = toggle.getAttribute("aria-checked") !== "true";
