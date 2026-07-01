@@ -149,44 +149,6 @@
     .hero {
       display: none;
     }
-    .demo-overlay {
-      position: fixed;
-      inset: 0;
-      z-index: 999;
-      background: rgba(0, 0, 0, 0.35);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s ease;
-    }
-    .demo-overlay.is-visible {
-      opacity: 1;
-    }
-    .demo-banner {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0.95);
-      z-index: 1000;
-      min-width: 320px;
-      max-width: 520px;
-      width: 90%;
-      padding: 36px 40px;
-      background: #4c8ba5;
-      color: #fff;
-      font-size: 24px;
-      line-height: 1.35;
-      font-weight: bold;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.28);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.4s ease, transform 0.4s ease;
-    }
-    .demo-banner.is-visible {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
-    }
     @media (max-width: 900px) {
       .header-inner {
         flex-wrap: wrap;
@@ -209,14 +171,26 @@
       align-items: start;
       margin-top: 12px;
     }
+    .form-wrap {
+      max-width: 620px;
+      margin-top: 12px;
+    }
     h1 {
-      margin: 0 0 12px;
-      font-size: 34px;
-      font-weight: normal;
+      margin: 0 0 10px;
+      font-size: 32px;
+      font-weight: 600;
+      color: #48453b;
     }
     .request-id {
-      font-size: 28px;
-      margin-bottom: 36px;
+      display: inline-block;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+      color: #6b6b6b;
+      background: #f2f4f7;
+      border-radius: 4px;
+      padding: 4px 12px;
+      margin-bottom: 28px;
     }
     .intro, .phone {
       font-size: 15px;
@@ -344,6 +318,78 @@
       font-size: 14px;
       line-height: 1.4;
       color: #48453b;
+    }
+    .form-box .option input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 16px;
+      height: 16px;
+      margin: 0 8px 0 0;
+      border: 2px solid #b0b0aa;
+      border-radius: 50%;
+      vertical-align: -3px;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
+    .form-box .option input[type="radio"]:checked {
+      border-color: #4c8ba5;
+      background: radial-gradient(circle, #4c8ba5 0 42%, #fff 48%);
+    }
+    .form-box.has-error .option input[type="radio"] {
+      border-color: #c0392b;
+    }
+    .options {
+      position: relative;
+    }
+    .form-hint {
+      display: none;
+      position: absolute;
+      top: -4px;
+      right: calc(100% + 18px);
+      width: 230px;
+      margin: 0;
+      padding: 12px 16px;
+      background: #fff;
+      border: 1px solid #cfcfc9;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #48453b;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+      z-index: 5;
+    }
+    .form-box.has-error .form-hint {
+      display: block;
+    }
+    .form-hint::before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 100%;
+      border: 9px solid transparent;
+      border-left-color: #cfcfc9;
+    }
+    .form-hint::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: calc(100% - 1px);
+      border: 8px solid transparent;
+      border-left-color: #fff;
+    }
+    @media (max-width: 1120px) {
+      .form-hint {
+        position: static;
+        width: auto;
+        right: auto;
+        margin-bottom: 12px;
+        box-shadow: none;
+      }
+      .form-hint::before,
+      .form-hint::after {
+        display: none;
+      }
     }
     textarea {
       width: 100%;
@@ -571,85 +617,27 @@
   <div class="green-bar"></div>
 
   <div id="variant1">
-  <section class="feedback-box">
-    <div class="feedback-box-inner">
-      <h2>Vielen Dank für Ihre Rückmeldung!</h2>
-      <p>Ihr Feedback hilft uns dabei, die <b>Qualität unserer Beratung</b> kontinuierlich zu verbessern und <b>passende Anfragen für Sie</b> sicherzustellen.</p>
-      <h3>Was passiert mit Ihrem Feedback?</h3>
-      <ul>
-        <li>
-          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-          Der Berater <b>{{advisorName}}</b> erhält eine <b>persönliche Rückmeldung</b>.
-        </li>
-        <li>
-          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-          Es erfolgt eine <b>gezielte Schulungsmaßnahme</b> bei {{advisorName}}.
-        </li>
-        <li>
-          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-          Das Feedback beeinflusst die <b>Qualitätsbewertung</b> und damit die <b>Bonusvergütung</b> des Beraters.
-        </li>
-        <li>
-          <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-          Die Erkenntnisse helfen uns, die <b>Qualität zukünftiger Anfragen</b> weiter zu verbessern.
-        </li>
-      </ul>
-    </div>
-  </section>
-
   <div class="hero"></div>
 
   <div class="content">
-    <h1>Anfrage reklamieren</h1>
+    <h1>Feedback geben</h1>
     <div class="request-id">Anfrage {{requestNumber}}</div>
 
-    <div class="content-main">
-      <div class="content-left">
-        <div class="warning-box">
-          <h2>Lead-Volumen gefährdet</h2>
-          <p>Wir verstehen, dass <b>nicht jeder Kontakt perfekt zu Ihrem Angebot passt</b> und Reklamationen Teil eines <b>transparenten Vermittlungsprozesses</b> sind.</p>
-          <p>Gleichzeitig möchten wir darauf hinweisen, dass eine <b>überdurchschnittlich hohe Reklamationsquote</b> Einfluss auf Ihr <b>zukünftiges Lead-Volumen</b> hat.</p>
-        </div>
-        <p class="phone">
-          Sie wollen Ihre Buchung optimieren & zukünftige Reklamationen vermeiden? Ihr persönlicher Partnerbetreuer hilft Ihnen gerne weiter:<br/>
-          <a href="tel:004961312652011">06131/26 52 011</a>
-        </p>
-
-        <div class="webinar">
-          <h2 class="webinar-title">Webinar: Qualität ist kein Zufall –<br/>Unsere Maßnahmen für Top Leads</h2>
-          <div class="webinar-body">
-            <img class="webinar-photo" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=240&q=80" alt="Rene Renkel"/>
-            <ul class="webinar-list">
-              <li>
-                <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-                Wie entstehen unsere <b>hochwertigen Leads</b>
-              </li>
-              <li>
-                <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-                Was tun wir für die <b>Qualitätssicherung</b>
-              </li>
-              <li>
-                <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-                Einblicke in das <b>Reklamationsmanagement</b>
-              </li>
-            </ul>
-          </div>
-          <a class="webinar-btn" href="#">Jetzt kostenlos anmelden</a>
-          <p class="webinar-date">Nächster Termin: 18.06.2026</p>
-        </div>
+    <div class="form-wrap">
+      <form class="form-box feedback-form" novalidate>
+      <h2>Warum war die Anfrage ungeeignet?</h2>
+      <div class="options">
+        <p class="form-hint">Bitte wählen Sie die Ursache für Ihr Feedback aus.</p>
+        <label class="option"><input type="radio" name="reason" required/> Kontakt bereits bekannt</label>
+        <label class="option"><input type="radio" name="reason"/> Kein Kontakt möglich</label>
+        <label class="option"><input type="radio" name="reason"/> Budget/Finanzierung falsch</label>
+        <label class="option"><input type="radio" name="reason"/> Zielgebiet falsch</label>
+        <label class="option"><input type="radio" name="reason"/> Produktklassifizierung falsch</label>
+        <label class="option"><input type="radio" name="reason"/> Keine Beachtung der hinterlegten Kriterien (bitte in Textfeld erläutern)</label>
       </div>
-
-      <aside class="form-box">
-      <h2>Bitte wählen Sie den Reklamationsgrund</h2>
-      <label class="option"><input type="radio" name="reason"/> Kontakt bereits bekannt</label>
-      <label class="option"><input type="radio" name="reason"/> Kein Kontakt möglich</label>
-      <label class="option"><input type="radio" name="reason"/> Budget/Finanzierung falsch</label>
-      <label class="option"><input type="radio" name="reason"/> Zielgebiet falsch</label>
-      <label class="option"><input type="radio" name="reason"/> Produktklassifizierung falsch</label>
-      <label class="option"><input type="radio" name="reason"/> Keine Beachtung der hinterlegten Kriterien (bitte in Textfeld erläutern)</label>
-      <textarea placeholder="Hier haben Sie die Möglichkeit Ihren Reklamationsgrund weiter auszuführen."></textarea>
-      <button class="submit" type="button">Anfrage reklamieren</button>
-      </aside>
+      <textarea placeholder="Hier haben Sie die Möglichkeit, die Ursache für Ihr Feedback weiter auszuführen."></textarea>
+      <button class="submit" type="submit" data-next="/lp/feedback-danke">Feedback abgeben</button>
+      </form>
     </div>
   </div>
 
@@ -714,56 +702,24 @@
   <div class="hero"></div>
 
   <div class="content">
-    <h1>Anfrage reklamieren</h1>
+    <h1>Feedback geben</h1>
     <div class="request-id">Anfrage {{requestNumber}}</div>
 
-    <div class="content-main">
-      <div class="content-left">
-        <div class="warning-box">
-          <h2>Lead-Volumen gefährdet</h2>
-          <p>Wir verstehen, dass <b>nicht jeder Kontakt perfekt zu Ihrem Angebot passt</b> und Reklamationen Teil eines <b>transparenten Vermittlungsprozesses</b> sind.</p>
-          <p>Gleichzeitig möchten wir darauf hinweisen, dass eine <b>überdurchschnittlich hohe Reklamationsquote</b> Einfluss auf Ihr <b>zukünftiges Lead-Volumen</b> hat.</p>
-        </div>
-        <p class="phone">
-          Sie wollen Ihre Buchung optimieren & zukünftige Reklamationen vermeiden? Ihr persönlicher Partnerbetreuer hilft Ihnen gerne weiter:<br/>
-          <a href="tel:004961312652011">06131/26 52 011</a>
-        </p>
-
-        <div class="webinar">
-          <h2 class="webinar-title">Webinar: Qualität ist kein Zufall –<br/>Unsere Maßnahmen für Top Leads</h2>
-          <div class="webinar-body">
-            <img class="webinar-photo" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=240&q=80" alt="Rene Renkel"/>
-            <ul class="webinar-list">
-              <li>
-                <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-                Wie entstehen unsere <b>hochwertigen Leads</b>
-              </li>
-              <li>
-                <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-                Was tun wir für die <b>Qualitätssicherung</b>
-              </li>
-              <li>
-                <img src="https://static.pflegehilfe.org/newsletter/icons/icon-haken-22-19-1.png" alt=""/>
-                Einblicke in das <b>Reklamationsmanagement</b>
-              </li>
-            </ul>
-          </div>
-          <a class="webinar-btn" href="#">Jetzt kostenlos anmelden</a>
-          <p class="webinar-date">Nächster Termin: 18.06.2026</p>
-        </div>
+    <div class="form-wrap">
+      <form class="form-box feedback-form" novalidate>
+      <h2>Warum war die Anfrage ungeeignet?</h2>
+      <div class="options">
+        <p class="form-hint">Bitte wählen Sie die Ursache für Ihr Feedback aus.</p>
+        <label class="option"><input type="radio" name="reason-v2" required/> Kontakt bereits bekannt</label>
+        <label class="option"><input type="radio" name="reason-v2"/> Kein Kontakt möglich</label>
+        <label class="option"><input type="radio" name="reason-v2"/> Budget/Finanzierung falsch</label>
+        <label class="option"><input type="radio" name="reason-v2"/> Zielgebiet falsch</label>
+        <label class="option"><input type="radio" name="reason-v2"/> Produktklassifizierung falsch</label>
+        <label class="option"><input type="radio" name="reason-v2"/> Keine Beachtung der hinterlegten Kriterien (bitte in Textfeld erläutern)</label>
       </div>
-
-      <aside class="form-box">
-      <h2>Bitte wählen Sie den Reklamationsgrund</h2>
-      <label class="option"><input type="radio" name="reason-v2"/> Kontakt bereits bekannt</label>
-      <label class="option"><input type="radio" name="reason-v2"/> Kein Kontakt möglich</label>
-      <label class="option"><input type="radio" name="reason-v2"/> Budget/Finanzierung falsch</label>
-      <label class="option"><input type="radio" name="reason-v2"/> Zielgebiet falsch</label>
-      <label class="option"><input type="radio" name="reason-v2"/> Produktklassifizierung falsch</label>
-      <label class="option"><input type="radio" name="reason-v2"/> Keine Beachtung der hinterlegten Kriterien (bitte in Textfeld erläutern)</label>
-      <textarea placeholder="Hier haben Sie die Möglichkeit Ihren Reklamationsgrund weiter auszuführen."></textarea>
-      <button class="submit" type="button">Anfrage reklamieren</button>
-      </aside>
+      <textarea placeholder="Hier haben Sie die Möglichkeit, die Ursache für Ihr Feedback weiter auszuführen."></textarea>
+      <button class="submit" type="submit" data-next="/lp/feedback-danke">Feedback abgeben</button>
+      </form>
     </div>
   </div>
 
@@ -816,26 +772,7 @@
   </section>
   </div><!-- /#variant2 -->
 
-  <div id="demo-overlay" class="demo-overlay" aria-hidden="true"></div>
-  <div id="demo-banner" class="demo-banner" role="status" aria-live="polite">Negatives Feedback wird Berater zugeordnet</div>
-
   <script>
-    (function () {
-      var params = new URLSearchParams(window.location.search);
-      if (params.get("from") !== "email") return;
-
-      var overlay = document.getElementById("demo-overlay");
-      var banner = document.getElementById("demo-banner");
-      if (!banner) return;
-
-      if (overlay) overlay.classList.add("is-visible");
-      banner.classList.add("is-visible");
-      window.setTimeout(function () {
-        banner.classList.remove("is-visible");
-        if (overlay) overlay.classList.remove("is-visible");
-      }, 2200);
-    })();
-
     (function () {
       var toggle = document.getElementById("variant-toggle");
       var v1 = document.getElementById("variant1");
@@ -849,6 +786,29 @@
         v1.classList.toggle("variant-hidden", showV2);
         v2.classList.toggle("variant-hidden", !showV2);
         if (showV2 && popup) popup.classList.remove("variant-hidden");
+      });
+    })();
+
+    (function () {
+      var forms = document.querySelectorAll(".feedback-form");
+      Array.prototype.forEach.call(forms, function (form) {
+        var radios = form.querySelectorAll("input[type=radio]");
+        var submit = form.querySelector(".submit[data-next]");
+
+        Array.prototype.forEach.call(radios, function (radio) {
+          radio.addEventListener("change", function () {
+            form.classList.remove("has-error");
+          });
+        });
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          if (!form.querySelector("input[type=radio]:checked")) {
+            form.classList.add("has-error");
+            return;
+          }
+          if (submit) window.location.href = submit.getAttribute("data-next");
+        });
       });
     })();
   </script>
